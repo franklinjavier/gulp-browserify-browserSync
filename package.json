@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "My experimental blog",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "experiment"
+  ],
+  "author": "Franklin Javier",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^1.1.2",
+    "debowerify": "^0.7.1",
+    "gulp": "^3.8.5",
+    "gulp-notify": "^1.4.0",
+    "gulp-plumber": "^0.6.3",
+    "gulp-sass": "^0.7.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^0.3.1",
+    "gulp-watchify": "^0.2.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^0.6.4"
+  },
+  "dependencies": {
+    "browserify": "^6.1.0",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
