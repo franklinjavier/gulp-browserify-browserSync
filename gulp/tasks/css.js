@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     sync = require('browser-sync'),
     util = require('../util');
 
-gulp.task('sass', function () {  
+gulp.task('css', function () {  
 
     gulp.src('./scss/**/*.scss')
         .pipe(sass({
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
         .on('error', util.handleErros)
 
         // Specify the output destination
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('./dist/css'))
 
         // Reload the browser-sync
         .pipe(sync.reload({stream:true}));

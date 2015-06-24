@@ -1,11 +1,11 @@
 var gulp = require('gulp'),
     sync = require('browser-sync');
 
-gulp.task('sync', ['scripts'], function() {
+gulp.task('sync', ['js'], function() {
 
-    sync.init(['./index.html', './css/*.css', './js/*.js'], {
+    sync.init(['./dist/*.{html,css,js,jpg}'], {
         server: {
-            baseDir: './'
+            baseDir: './dist/'
         },
         open: false,     // don't open the browser
         notify: false,   // hide the notify on the corner
