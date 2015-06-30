@@ -1,15 +1,11 @@
 {
-  "name": "blog",
+  "name": "gulp-browserify-browserSync",
   "version": "0.0.0",
-  "description": "My experimental blog",
+  "description": "GulpJS + Browserify (watchify) + Browser Sync FTW",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "blog",
-    "experiment"
-  ],
   "author": "Franklin Javier",
   "license": "MIT",
   "devDependencies": {
