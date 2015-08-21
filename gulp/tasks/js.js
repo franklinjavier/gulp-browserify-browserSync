@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     util = require('../util'),
     sync = require('browser-sync');
 
-gulp.task('scripts', function() {
+gulp.task('js', function() {
 
     var bundler = watchify('./js/main');
     bundler.transform('debowerify');
@@ -27,11 +27,11 @@ gulp.task('scripts', function() {
         // Use vinyl-source-stream to make the
         // stream gulp compatible. Specifiy the
         // desired output filename here.
-        .pipe(source('bundle.js'))
+        .pipe(source('main.js'))
         .pipe(streamify(uglify()))
 
         // Specify the output destination
-        .pipe(gulp.dest('./build/'))
+        .pipe(gulp.dest('./dist/js/'))
 
         // Reload the browser-sync
         .pipe(sync.reload({stream:true}));
